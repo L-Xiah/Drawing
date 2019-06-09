@@ -32,4 +32,9 @@ TWaver
 360全景、贴图
 
 
+####OpenGL/Direct3D####
+底层图形API
+Direct3D是DirectX一部分（还有声音等）
+OpenGL是跨平台
+
 
