@@ -24,12 +24,10 @@ TWaver
 
 
 ####WebGL####
+webgl->openGL + JS(在支持HTML5的浏览器上应用)
 在此基础上进行开发的有许多Js技术：threeJs、babylonJs、thingJs等
 三维图形显示：加载三维文件（obj，gltf等格式）、专业的建模软件（模型简化）、用代码实现(数据中心、3D机房等实例)
 
-
-####WebVR####
-360全景、贴图
 
 
 ####OpenGL/Direct3D####
