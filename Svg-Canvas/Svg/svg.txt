@@ -1,0 +1,60 @@
+
+Svg
+http://javascript.ruanyifeng.com/htmlapi/svg.html
+svg（scalable vector graphics）是在html中绘图的技术
+
+
+
+####viewBox####
+https://www.jb51.net/html5/375064.html
+svg中显示的视窗（svg画布是无限大的）
+保持viewBox的宽高比和svg的宽高比一致
+
+
+####拖拽缩放####
+http://liuxiaojun.win/page/3/
+（svg作为一个html文件嵌入在主页面中-〉使用iframe标签）
+
+
+
+
+####path半圆####
+    function str_svgCirclePro_d(progress) {
+        // 根据进度设置半圆图的d属性
+        var r=60, x, y; // 圆弧半径
+
+        // var progress=0.1189;
+        // 计算当前的进度对应的角度值
+        // var degrees = progress * 180; 
+
+        if (progress >= 1) {
+            // 进度为100%
+            x = r;
+            y = 0;
+        } else if (progress <= 0) {
+            // 进度为0%
+            x = -r;
+            y = 0;
+        } else {
+            // 计算当前角度对应的弧度值
+            var rad = progress* Math.PI;
+            //极坐标转换成直角坐标
+            x = -(Math.cos(rad) * r).toFixed(2);
+            y = -(Math.sin(rad) * r).toFixed(2);
+        }
+
+        
+
+
+        //大于180度时候画大角度弧，小于180度的画小角度弧，(deg > 180) ? 1 : 0
+        var lenghty = 0; // window.Number(degrees > 180);
+
+
+        return 'M ' + -r + ' 0 A ' + r + ' ' + r + ' 0 ' + lenghty + ' 1 ' + x + ' ' + y
+
+        //path 属性
+        // var descriptions = ['M', -r, 0, 'A', r, r, 0, lenghty, 1, x, y];
+
+        // 给path 设置属性
+        // path.setAttribute('d', descriptions.join(' '));
+    };

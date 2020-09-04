@@ -1,0 +1,28 @@
+
+
+####ECharts####
+开源的可视化库，图表动画；
+
+
+
+####Zrender####
+
+渲染器、二维绘图引擎，可以以canvas、svg、vml等方式渲染；
+ECharts的核心基础；
+
+特点：
+完整的事件封装、
+高效的分层刷新、
+丰富的图形选项、
+强大的动画支持、
+易于扩展
+
+
+
+####获取echarts对象####
+echarts obj
+var compareChart = echarts.getInstanceByDom(document.getElementById("chart_007294915395244339"));
+
+var tempOpt = compareChart.getOption();
+tempOpt...
+compareChart.setOption(tempOpt);
